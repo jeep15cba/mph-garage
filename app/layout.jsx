@@ -4,25 +4,25 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-  title: "Promptopia",
-  description: "Discover & Share AI Prompts",
+	title: "MPH Pages",
+	description: "Track and manage your vehicle",
 };
 
 const RootLayout = ({ children }) => (
-  <html lang='en'>    
-    <body>
-      <Provider>
-        <div className='main'>
-          <div className='gradient' />
-        </div>
+	<html lang="en">
+		<body>
+			<Provider>
+				<div className="main">
+					<div className="gradient" />
+				</div>
 
-        <main className='app'>
-          <Nav />
-          {children}
-        </main>
-      </Provider>
-    </body>
-  </html>
+				<main className="app">
+					<Nav />
+					{children}
+				</main>
+			</Provider>
+		</body>
+	</html>
 );
 
 export default RootLayout;
